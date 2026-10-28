@@ -68,7 +68,7 @@ if __name__ == '__main__':
                 success += 1
                 points = int(match.group(1))  # 获取到的积分数量
                 message_status = f"签到成功，获得 {points} 积分"
-            elif status == "Checkin Repeats! Please Try Tomorrow":
+            elif status == "Today's observation logged. Return tomorrow for more points.":
                 message_status = "今日已签到"
             else:
                 fail += 1
